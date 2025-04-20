@@ -1,0 +1,7 @@
+{
+  "name": "AlertControl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
