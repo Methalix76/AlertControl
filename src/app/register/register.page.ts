@@ -91,10 +91,16 @@ export class RegisterPage {
 
 
 
+
+
+
+
+
+
+
   goBack() {  
     this.navCtrl.navigateBack('/');  
   } 
-
 
   pruebaClickLogin() {
     console.log('Botón btnGuardarRegistro clickeado');
