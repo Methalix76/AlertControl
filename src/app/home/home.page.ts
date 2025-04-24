@@ -76,7 +76,7 @@ export class HomePage {
 
   pruebaClickRegistro() {
     console.log('Botón btnregistro clickeado');
-    alert('¡Botón registro funcional!');
+    this.navCtrl.navigateForward('/register');
   }
 }
 
