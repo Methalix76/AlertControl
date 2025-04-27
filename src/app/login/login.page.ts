@@ -48,11 +48,9 @@ import { Router } from '@angular/router';
   </ion-item>
 
 
-<div style="text-align: end;">
-  <a (click)="navigateToRecupera()" style="color: var(--ion-color-primary); text-decoration: none; cursor: pointer;">
-    ¿Olvidaste tu contraseña?
-  </a>
-</div>
+    <div style="text-align: end;">
+      Olvidaste tu contraseña?
+    </div>
   
 </ion-content>
 
@@ -92,8 +90,9 @@ import { Router } from '@angular/router';
     `  
   ]  
 })
-export class LoginPage {  
-  constructor(private navCtrl: NavController,private router: Router) {}  
+export class LoginPage {
+  router: any;  
+  constructor(private navCtrl: NavController) {}  
   nombre: string = '';
   contrasena: string = '';
 
