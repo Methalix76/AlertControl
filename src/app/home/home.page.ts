@@ -37,6 +37,10 @@ import { NavController } from '@ionic/angular';
         >R e g i s t r a t e</ion-button>
       </div>
     </ion-content>
+
+
+
+    <!--remediacion github-->
   `,
   styles: [
     `
