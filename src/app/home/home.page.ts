@@ -40,7 +40,6 @@ import { NavController } from '@ionic/angular';
 
 
 
-    <!--remediacion github-->
   `,
   styles: [
     `
