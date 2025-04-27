@@ -27,7 +27,7 @@ import { NavController } from '@ionic/angular';
           color="primary" 
           expand="block"
         >Entrar</ion-button>
-        <p> aun no estas registrado? <img src="assets/img/flecha abajo.png" 
+        <p> Aun no estas registrado? <img src="assets/img/flecha abajo.png" 
             class="custom-image">
         <ion-button id="btnregistro"
           size="default"

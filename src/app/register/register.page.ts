@@ -13,37 +13,46 @@ import { FormsModule } from '@angular/forms';
     <ion-header [translucent]="true">  
       <ion-toolbar> 
           <ion-title>REGISTRO USUARIOS</ion-title>  
+          <ion-buttons slot="end">
+            <ion-button (click)="goBack()" class="custom-back-button" fill="clear">
+              <img src="assets/img/left_2.png">
+            </ion-button>
+          </ion-buttons> 
       </ion-toolbar>  
     </ion-header>
- 
+
+      <h3>Favor ingresa los datos solicitados:</h3>
+
     <ion-content>
-    <p>Favor ingrese los datos solicitados</p>
-      <div class="ion-padding content-container">
+
       <ion-item>
         <ion-label position="floating">Nombre</ion-label>
-        <ion-input [(ngModel)]="Nombre" type="text"></ion-input>
-
+              <br>
+        <ion-input [(ngModel)]="Nombre" type="text" placeholder="Ingresa tu Nombre"></ion-input>
+      
         <ion-label position="floating">Apellido</ion-label>
-        <ion-input [(ngModel)]="Apellido" type="text"></ion-input>
+              <br>
+        <ion-input [(ngModel)]="Apellido" type="text" placeholder="Ingresa tu Apellido"></ion-input>
 
         <ion-label position="floating">Correo electronico</ion-label>
-        <ion-input [(ngModel)]="mail" type="text"></ion-input>
+              <br>
+        <ion-input [(ngModel)]="mail" type="text" placeholder="Ingresa correo electronico"></ion-input>
 
-        <ion-label position="floating">Run</ion-label>
-        <ion-input [(ngModel)]="run" type="text"></ion-input>
+        <ion-label position="floating">RUN</ion-label>
+              <br>
+        <ion-input [(ngModel)]="run" type="text" placeholder="Ingresa RUN"></ion-input>
 
-        <ion-label position="floating">tratamiento</ion-label>
-        <ion-input [(ngModel)]="tratamiento" type="text"></ion-input>
+        <ion-label position="floating">Tratamiento</ion-label>
+              <br>
+        <ion-input [(ngModel)]="tratamiento" type="text" placeholder="ingresa tu diagnostico"></ion-input>
+    </ion-item>
+      
+    <br>
+ 
 
-        <ion-label position="floating">int5</ion-label>
-        <ion-input [(ngModel)]="int5" type="text"></ion-input>
-      </ion-item>
-</div>
-
-<div>
-
+      <div>
         <ion-button id="btnGuardarRegistro"
-          size="default"
+          size="large"
           (click)="pruebaClickGuardarRegistro()" 
           color="secondary" 
           expand="block"
@@ -88,7 +97,7 @@ export class RegisterPage {
   run: string = '';
   tratamiento: string = '';
   int5: string = '';
-
+  ejemplo:string = '';
 
 
 
