@@ -22,42 +22,39 @@ import { FormsModule } from '@angular/forms';
     </ion-header>
 
       <h3>Favor ingresa los datos solicitados:</h3>
+<br>
+<br>
+<br>
+<br>
+
 
     <ion-content>
 
       <ion-item>
-        <ion-label position="floating">Nombre</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="Nombre" type="text" placeholder="Ingresa tu Nombre"></ion-input>
-      
-        <ion-label position="floating">Apellido</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="Apellido" type="text" placeholder="Ingresa tu Apellido"></ion-input>
 
-        <ion-label position="floating">RUN</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="run" type="text" placeholder="RUN sin guion Ej:9876543k"></ion-input>
-
-        <ion-label position="floating">Correo electronico</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="mail" type="text" placeholder="Ingresa correo electronico"></ion-input>
-
-         <!-- <ion-label position="floating">Contraseña</ion-label>
+        <ion-label position="floating">Contraseña</ion-label>
+        <br>
         <ion-input dir="rtl" [(ngModel)]="run" type="text" placeholder="Contraseña"></ion-input>
 
         <ion-label position="floating">Repetir Contraseña</ion-label>
+        <br>
         <ion-input dir="rtl" [(ngModel)]="run" type="text" placeholder="Repetir Contraseña"></ion-input>
         
-       <ion-label position="floating">Tratamiento</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="tratamiento" type="text" placeholder="Ingresa tu diagnostico"></ion-input>-->
+        <ion-label position="floating">Tratamiento</ion-label>
+        <br>
+        <ion-input dir="rtl" [(ngModel)]="tratamiento" type="text" placeholder="Ingresa tu diagnostico"></ion-input>
     </ion-item>
       
     <br>
  
 
       <div>
-        <ion-button id="btnSiguiente"
+        <ion-button id="btnGuardarRegistro"
           size="large"
-          (click)="pruebaClickbtnSiguiente()" 
+          (click)="pruebaClickGuardarRegistro()" 
           color="secondary" 
           expand="block"
-        >Siguiente</ion-button>
+        >Registrarse</ion-button>
       </div>
     </ion-content>
 
@@ -90,7 +87,7 @@ import { FormsModule } from '@angular/forms';
     `
   ]
 })
-export class RegisterPage {
+export class Register2Page {
   constructor(private navCtrl: NavController) {}
   Nombre: string = '';
   Apellido: string = '';
@@ -104,7 +101,7 @@ export class RegisterPage {
 
 
   goBack() {  
-    this.navCtrl.navigateBack('/');  
+    this.navCtrl.navigateBack('/register');  
   } 
 
   pruebaClickLogin() {
@@ -112,10 +109,8 @@ export class RegisterPage {
     this.navCtrl.navigateForward('/home');
   }
 
-  pruebaClickbtnSiguiente() {
+  pruebaClickGuardarRegistro() {
     console.log('Botón btnGuardarRegistro clickeado');
-    this.navCtrl.navigateForward('/register2');
-    
-
+    alert('¡ registro guardado funcional!');
   }
 }
