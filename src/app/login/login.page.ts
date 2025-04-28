@@ -48,9 +48,11 @@ import { Router } from '@angular/router';
   </ion-item>
 
 
-    <div style="text-align: end;">
-      Olvidaste tu contraseña?
-    </div>
+<div style="text-align: end;">
+  <a (click)="navigateToRecupera()" style="color: var(--ion-color-primary); text-decoration: none; cursor: pointer;">
+    ¿Olvidaste tu contraseña?
+  </a>
+</div>
   
 </ion-content>
 

@@ -20,7 +20,7 @@ import { NavController } from '@ionic/angular';
             class="custom-image"
           >
         </div>
-        <!-- Botón btnprueba -->
+                                                                        <!-- Botón btnprueba -->
         <ion-button id="btnlogin" 
           size="large"
           (click)="pruebaClickLogin()" 

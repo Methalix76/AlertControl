@@ -97,12 +97,7 @@ export class RegisterPage {
   run: string = '';
   tratamiento: string = '';
   int5: string = '';
-  ejemplo:string = '';
-
-
-
-
-
+  ejemplo:string = '';  /* esperando para asignacion futura */
 
 
 
