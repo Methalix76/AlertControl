@@ -34,15 +34,15 @@ import { FormsModule } from '@angular/forms';
 
         <ion-label position="floating">Contraseña</ion-label>
         <br>
-        <ion-input dir="rtl" [(ngModel)]="run" type="text" placeholder="Contraseña"></ion-input>
+        <ion-input  [(ngModel)]="run" type="text" placeholder="Contraseña"></ion-input>
 
         <ion-label position="floating">Repetir Contraseña</ion-label>
         <br>
-        <ion-input dir="rtl" [(ngModel)]="run" type="text" placeholder="Repetir Contraseña"></ion-input>
+        <ion-input  [(ngModel)]="run" type="text" placeholder="Repetir Contraseña"></ion-input>
         
         <ion-label position="floating">Tratamiento</ion-label>
         <br>
-        <ion-input dir="rtl" [(ngModel)]="tratamiento" type="text" placeholder="Ingresa tu diagnostico"></ion-input>
+        <ion-input  [(ngModel)]="tratamiento" type="text" placeholder="Ingresa tu diagnostico"></ion-input>
     </ion-item>
       
     <br>

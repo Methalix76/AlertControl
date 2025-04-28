@@ -27,25 +27,32 @@ import { FormsModule } from '@angular/forms';
 
       <ion-item>
         <ion-label position="floating">Nombre</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="Nombre" type="text" placeholder="Ingresa tu Nombre"></ion-input>
+        <br>
+        <ion-input  [(ngModel)]="Nombre" type="text" placeholder="Ingresa tu Nombre"></ion-input>
       
         <ion-label position="floating">Apellido</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="Apellido" type="text" placeholder="Ingresa tu Apellido"></ion-input>
+        <br>
+        <ion-input  [(ngModel)]="Apellido" type="text" placeholder="Ingresa tu Apellido"></ion-input>
 
         <ion-label position="floating">RUN</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="run" type="text" placeholder="RUN sin guion Ej:9876543k"></ion-input>
+        <br>
+        <ion-input  [(ngModel)]="run" type="text" placeholder="RUN sin guion Ej:9876543k"></ion-input>
 
         <ion-label position="floating">Correo electronico</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="mail" type="text" placeholder="Ingresa correo electronico"></ion-input>
+        <br>
+        <ion-input  [(ngModel)]="mail" type="text" placeholder="Ingresa correo electronico"></ion-input>
 
-         <!-- <ion-label position="floating">Contraseña</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="run" type="text" placeholder="Contraseña"></ion-input>
+        <!-- <ion-label position="floating">Contraseña</ion-label>
+        <br>
+        <ion-input  [(ngModel)]="run" type="text" placeholder="Contraseña"></ion-input>
 
         <ion-label position="floating">Repetir Contraseña</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="run" type="text" placeholder="Repetir Contraseña"></ion-input>
+        <br>
+        <ion-input  [(ngModel)]="run" type="text" placeholder="Repetir Contraseña"></ion-input>
         
        <ion-label position="floating">Tratamiento</ion-label>
-        <ion-input dir="rtl" [(ngModel)]="tratamiento" type="text" placeholder="Ingresa tu diagnostico"></ion-input>-->
+       <br>
+       <ion-input  [(ngModel)]="tratamiento" type="text" placeholder="Ingresa tu diagnostico"></ion-input>-->
     </ion-item>
       
     <br>
