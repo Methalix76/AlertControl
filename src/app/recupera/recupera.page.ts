@@ -36,8 +36,13 @@ import { FormsModule } from '@angular/forms';
   
 <!-- Input para nombre, se debe importar formsModule, por el standalone-->
   <ion-item>
-    <ion-label position="floating">ingresa tu Correo</ion-label>
-    <ion-input [(ngModel)]="correo" type="text"></ion-input>
+        <ion-label position="floating">Usuario</ion-label>
+        <br>
+        <ion-input  [(ngModel)]="Usuario" type="text" placeholder="max 50 caracteres"></ion-input>
+
+        <ion-label position="floating">Correo electronico</ion-label>
+        <br>
+        <ion-input  [(ngModel)]="mail" type="text" placeholder="Ingresa correo electronico"></ion-input>
   </ion-item>
 
 </ion-content>
@@ -81,15 +86,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class RecuperaPage {  
   constructor(private navCtrl: NavController) {}  
-  correo: string = '';
+  Usuario: string = '';
+  mail: string = '';
   
   goBack() {  
     this.navCtrl.navigateBack('/');  
   }    
 
   pruebaClickRecuppass() {
-    console.log('Botón btnValidacion clickeado');
-    alert('¡btnValidacion funcional!');
+    console.log('Botón btnRecuppass clickeado');
+    alert('btnRecuppass funcional!');
   }
 
 }  
