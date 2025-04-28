@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, LoadingController } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { NavController } from '@ionic/angular';
 
@@ -8,9 +8,7 @@ import { NavController } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule, CommonModule],
   template: `
-    <ion-header>
-
-    </ion-header>
+    <ion-header></ion-header>
     <ion-content>
       <div class="ion-padding content-container">
         <!-- Imagen centrada con margen -->
@@ -20,7 +18,7 @@ import { NavController } from '@ionic/angular';
             class="custom-image"
           >
         </div>
-                                                                        <!-- Botón btnprueba -->
+        <!-- Botón btnprueba -->
         <ion-button id="btnlogin" 
           size="large"
           (click)="pruebaClickLogin()" 
@@ -37,9 +35,6 @@ import { NavController } from '@ionic/angular';
         >R e g i s t r a t e</ion-button>
       </div>
     </ion-content>
-
-
-
   `,
   styles: [
     `
@@ -70,11 +65,18 @@ import { NavController } from '@ionic/angular';
   ]
 })
 export class HomePage {
-  constructor(private navCtrl: NavController) {}
+  constructor(private navCtrl: NavController, private loadingController: LoadingController) {}
 
-  pruebaClickLogin() {
+  async pruebaClickLogin() {
     console.log('Botón btnlogin clickeado');
-    this.navCtrl.navigateForward('/login');
+    const loading = await this.loadingController.create({
+      message: 'Espere por favor...',
+      duration: 300 // Duración en milisegundos
+    });
+    await loading.present();
+    setTimeout(() => {
+      this.navCtrl.navigateForward('/login');
+    }, 300); // Asegúrate que la duración coincida con la del loading
   }
 
   pruebaClickRegistro() {
@@ -82,5 +84,3 @@ export class HomePage {
     this.navCtrl.navigateForward('/register');
   }
 }
-
-
