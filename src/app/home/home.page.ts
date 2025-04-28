@@ -70,13 +70,13 @@ export class HomePage {
   async pruebaClickLogin() {
     console.log('Botón btnlogin clickeado');
     const loading = await this.loadingController.create({
-      message: 'Espere por favor...',
+      message: 'Dirigiendo a Login...',
       duration: 300 // Duración en milisegundos
     });
     await loading.present();
     setTimeout(() => {
       this.navCtrl.navigateForward('/login');
-    }, 300); // Asegúrate que la duración coincida con la del loading
+    }, 1000); // Asegúrate que la duración coincida con la del loading
   }
 
   pruebaClickRegistro() {

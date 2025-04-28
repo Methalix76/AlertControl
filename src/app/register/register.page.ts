@@ -40,11 +40,11 @@ import { FormsModule } from '@angular/forms';
 
         <ion-label position="floating">RUN</ion-label>
               <br>
-        <ion-input [(ngModel)]="run" type="text" placeholder="Ingresa RUN"></ion-input>
+        <ion-input [(ngModel)]="run" type="text" placeholder="RUN sin guion Ej:9876543k"></ion-input>
 
         <ion-label position="floating">Tratamiento</ion-label>
               <br>
-        <ion-input [(ngModel)]="tratamiento" type="text" placeholder="ingresa tu diagnostico"></ion-input>
+        <ion-input [(ngModel)]="tratamiento" type="text" placeholder="Ingresa tu diagnostico"></ion-input>
     </ion-item>
       
     <br>

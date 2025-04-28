@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';  
-import { IonicModule } from '@ionic/angular';  
+import { IonicModule, LoadingController } from '@ionic/angular'; 
 import { CommonModule } from '@angular/common';  
 import { NavController } from '@ionic/angular';  
 import { FormsModule } from '@angular/forms';
@@ -83,18 +83,25 @@ export class LoginPage {
   nombre: string = '';
   contrasena: string = '';
 
-  constructor(private navCtrl: NavController) {}  
+  constructor(private navCtrl: NavController, private loadingController: LoadingController){}  
+
+  async pruebaClickValidacion() {
+    console.log('Botón btnValidacion clickeado');
+    const loading = await this.loadingController.create({
+      message: 'Validando informacion...',
+      duration: 750
+    });
+    await loading.present();
+    setTimeout(() => {
+      this.navCtrl.navigateForward('/login');
+    }, 300);
+  }
 
   goBack() {  
     this.navCtrl.navigateBack('/');  
   }    
-
   navigateToRecupera() {
     this.navCtrl.navigateForward(['/recupera']);
   }
 
-  pruebaClickValidacion() {
-    console.log('Botón btnValidacion clickeado');
-    alert('¡btnValidacion funcional!');
-  }
 }
