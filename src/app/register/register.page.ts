@@ -97,6 +97,8 @@ import { FormsModule } from '@angular/forms';
     `
   ]
 })
+
+
 export class RegisterPage {
   constructor(private navCtrl: NavController) {}
   Nombre: string = '';

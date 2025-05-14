@@ -15,18 +15,19 @@ import { NavController } from '@ionic/angular';
         <div class="image-container">
           <img src="assets/img/alert control 3 75p.png" 
             alt="Alert Control Image"
-            class="custom-image"
-          >
+            class="custom-image">
         </div>
-        <!-- Botón btnprueba -->
+                                <!-- Botón btnprueba -->
         <ion-button id="btnlogin" 
           size="large"
           (click)="pruebaClickLogin()" 
           color="primary" 
           expand="block"
         >Entrar</ion-button>
-        <p> Aun no estas registrado? <img src="assets/img/flecha abajo.png" 
-            class="custom-image">
+        <br>
+        <br>
+        <br>
+        <p> Aun no estas registrado? 
         <ion-button id="btnregistro"
           size="default"
           (click)="pruebaClickRegistro()" 
@@ -36,6 +37,8 @@ import { NavController } from '@ionic/angular';
       </div>
     </ion-content>
   `,
+
+
   styles: [
     `
     .content-container {
@@ -64,6 +67,8 @@ import { NavController } from '@ionic/angular';
     `
   ]
 })
+
+
 export class HomePage {
   constructor(private navCtrl: NavController, private loadingController: LoadingController) {}
 
@@ -71,12 +76,12 @@ export class HomePage {
     console.log('Botón btnlogin clickeado');
     const loading = await this.loadingController.create({
       message: 'Dirigiendo a Login...',
-      duration: 300 // Duración en milisegundos
+      duration: 350 // Duración en milisegundos
     });
     await loading.present();
     setTimeout(() => {
       this.navCtrl.navigateForward('/login');
-    }, 1000); // Asegúrate que la duración coincida con la del loading
+    }, 350); // duración coincide con la del loading
   }
 
   pruebaClickRegistro() {

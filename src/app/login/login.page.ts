@@ -54,7 +54,9 @@ import { FormsModule } from '@angular/forms';
       color="primary" 
       expand="block"
     >Entrar</ion-button>
-  `,  
+  `,
+  
+  
   styles: [  
     `  
     .custom-back-button {  
@@ -77,8 +79,10 @@ import { FormsModule } from '@angular/forms';
       margin-right: 8px;  
     }  
     `  
-  ]  
+  ] 
 })
+
+
 export class LoginPage {
   nombre: string = '';
   contrasena: string = '';
