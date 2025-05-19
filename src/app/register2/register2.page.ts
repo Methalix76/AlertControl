@@ -34,15 +34,15 @@ import { FormsModule } from '@angular/forms';
 
         <ion-label position="floating">Usuario</ion-label>
         <br>
-        <ion-input  [(ngModel)]="run" type="text" placeholder="max 50 caracteres"></ion-input>
+        <ion-input  [(ngModel)]="usuario" type="text" placeholder="max 50 caracteres"></ion-input>
       
         <ion-label position="floating">Contraseña</ion-label>
         <br>
-        <ion-input  [(ngModel)]="run" type="text" placeholder="Contraseña"></ion-input>
+        <ion-input  [(ngModel)]="pass" type="text" placeholder="Contraseña"></ion-input>
 
         <ion-label position="floating">Repetir Contraseña</ion-label>
         <br>
-        <ion-input  [(ngModel)]="run" type="text" placeholder="Repetir Contraseña"></ion-input>
+        <ion-input  [(ngModel)]="repass" type="text" placeholder="Repetir Contraseña"></ion-input>
         
         <ion-label position="floating">Tratamiento</ion-label>
         <br>
@@ -93,16 +93,10 @@ import { FormsModule } from '@angular/forms';
 })
 export class Register2Page {
   constructor(private navCtrl: NavController) {}
-  Nombre: string = '';
-  Apellido: string = '';
-  mail: string = '';
-  run: string = '';
+  usuario: string = '';
+  pass: string = '';
+  repass: string = '';
   tratamiento: string = '';
-  int5: string = '';
-  ejemplo:string = '';  /* esperando para asignacion futura */
-
-
-
 
   goBack() {  
     this.navCtrl.navigateBack('/register');  
