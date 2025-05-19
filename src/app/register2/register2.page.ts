@@ -91,8 +91,6 @@ import { FormsModule } from '@angular/forms';
     `
   ]
 })
-
-
 export class Register2Page {
   constructor(private navCtrl: NavController) {}
   Nombre: string = '';
@@ -102,6 +100,8 @@ export class Register2Page {
   tratamiento: string = '';
   int5: string = '';
   ejemplo:string = '';  /* esperando para asignacion futura */
+
+
 
 
   goBack() {  

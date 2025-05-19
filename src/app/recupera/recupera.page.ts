@@ -84,8 +84,6 @@ import { FormsModule } from '@angular/forms';
     `  
   ]  
 })
-
-
 export class RecuperaPage {  
   constructor(private navCtrl: NavController) {}  
   Usuario: string = '';
