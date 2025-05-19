@@ -31,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     <ion-content>
 
       <ion-item>
-
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+  
         <ion-label position="floating">Usuario</ion-label>
         <br>
         <ion-input  [(ngModel)]="usuario" type="text" placeholder="max 50 caracteres"></ion-input>

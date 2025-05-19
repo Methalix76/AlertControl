@@ -22,11 +22,20 @@ import { FormsModule } from '@angular/forms';
     </ion-header>
 
       <h3>Favor ingresa los datos solicitados:</h3>
+<br>
+<br>
+<br>
+<br>
+
 
     <ion-content>
 
-      <ion-item>
-        <ion-label position="floating">Nombre</ion-label>
+    
+      <ion-item >  
+
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+  
+      <ion-label position="floating">Nombre</ion-label>
         <br>
         <ion-input  [(ngModel)]="nombre" type="text" placeholder="Ingresa tu Nombre"></ion-input>
       
@@ -44,11 +53,6 @@ import { FormsModule } from '@angular/forms';
 
       </ion-item>
       
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
 
       <div>
