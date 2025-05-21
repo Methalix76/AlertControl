@@ -26,10 +26,7 @@ import { FormsModule } from '@angular/forms';
 <br>
 <br>
 <br>
-
-
     <ion-content>
-
       <ion-item>
       <ion-icon name="person-outline" slot="start"></ion-icon>
   
@@ -49,11 +46,8 @@ import { FormsModule } from '@angular/forms';
         <br>
         <ion-input  [(ngModel)]="tratamiento" type="text" placeholder="Ingresa tu diagnostico"></ion-input>
     </ion-item>
-      
-    <br>
- 
-
-      <div>
+<br>
+       <div>
         <ion-button id="btnGuardarRegistro"
           size="large"
           (click)="pruebaClickGuardarRegistro()" 
@@ -62,7 +56,6 @@ import { FormsModule } from '@angular/forms';
         >Registrarse</ion-button>
       </div>
     </ion-content>
-
   `,
   styles: [
     `
@@ -92,6 +85,8 @@ import { FormsModule } from '@angular/forms';
     `
   ]
 })
+
+
 export class Register2Page {
   constructor(private navCtrl: NavController) {}
   usuario: string = '';
